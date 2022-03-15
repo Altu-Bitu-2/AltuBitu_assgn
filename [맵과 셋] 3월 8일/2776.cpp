@@ -1,6 +1,5 @@
 #include <iostream>
-#include <set>
-#include <algorithm>
+#include <unordered_set>
 
 using namespace std;
 
@@ -10,10 +9,11 @@ int main() {
 
 	int T, N, M;
 	cin >> T;
-	set<int> s;
+	unordered_set<int> s;
 
 	while (T--) {
 		cin >> N;
+		s.clear();
 		for (int i = 0; i < N; i++) {
 			int a;
 			cin >> a;
@@ -25,7 +25,7 @@ int main() {
 			int b;
 			cin >> b;
 			
-			if (binary_search(s.begin(), s.end(), b))
+			if (s.find(b) != s.end())
 				cout << "1\n";
 			else
 				cout << "0\n";
