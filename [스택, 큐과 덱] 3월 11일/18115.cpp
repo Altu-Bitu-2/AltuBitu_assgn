@@ -24,17 +24,25 @@ int main() {
 
 	deque<int> dq;
 	for (int i = 0; i < N; i++) {
-		if (v[i] == 1) {
+		switch (v[i]) {
+		case 1:
+		{
 			dq.push_front(i + 1);
+			break;
 		}
-		else if (v[i] == 2) {
+		case 2:
+		{
 			int top = dq.front();
 			dq.pop_front();
 			dq.push_front(i + 1);
 			dq.push_front(top);
+			break;
 		}
-		else {
+		case 3:
+		{
 			dq.push_back(i + 1);
+			break;
+		}
 		}
 	}
 	while (!dq.empty()) {
