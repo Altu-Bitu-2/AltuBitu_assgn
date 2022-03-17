@@ -16,6 +16,7 @@ int main() {
 	for (int i = 0; i < s.size(); i++) { //배열에 s 저장
 		alpha[s[i] - 'A']++;
 	}
+
 	int oddCnt = 0;
 	int odd = -1;
 
