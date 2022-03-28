@@ -41,7 +41,6 @@ int main() {
 	afterW2 = beforeW + tmp;
 
 	string st;
-	
 	if (afterW2 <= 0 || beforeI2 <= 0) {
 		cout << "Danger Diet";
 	}
