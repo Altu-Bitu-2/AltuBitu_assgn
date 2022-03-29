@@ -12,7 +12,7 @@ int main() {
 	int D, dietI, dietA;
 	cin >> D >> dietI >> dietA; // 다이어트 기간, 일일 에너지 섭취량, 일일 활동 대사량
 	
-	double afterW = 0; // 다이어트 후 체중
+	int afterW = 0; // 다이어트 후 체중
 	int beforeI2 = beforeI;
 	int afterW2 = afterW;
 	
